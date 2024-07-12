@@ -15,9 +15,10 @@
     <nav class="container mx-auto p-6 top-0 md:bg-gray-800 md:sticky z-50">
         <div class="flex items-center justify-between">
             <div class="pt-2">
-                <a href="#" class="font-bold text-xl text-green-700">Travel<span class="text-xxl text-[#fcbd00]">Pal</span></a>
+                <a href="#" class="font-bold text-xl text-green-700">Travel<span
+                        class="text-xxl text-[#fcbd00]">Pal</span></a>
             </div>
-          
+
             <div class="nav-links hidden md:flex md:space-x-12 text-white">
                 <a href="#" class="hover:text-gray-400">Home</a>
                 <a href="#about" class="hover:text-gray-400">About</a>
@@ -27,10 +28,11 @@
             </div>
             <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800">Signin</a>
             <div class="md:hidden">
-                <ion-icon name="menu" class="text-4xl md:static sitcky top-0" id="menu" onclick="toggleMenu(this)"></ion-icon>
+                <ion-icon name="menu" class="text-4xl md:static sitcky top-0" id="menu"
+                    onclick="toggleMenu(this)"></ion-icon>
             </div>
         </div>
-        <div class="nav-links-mobile hidden flex flex-col justify-left  space-y-6 mt-6 md:hidden">
+        <div class="nav-links-mobile sm:hidden flex flex-col justify-left  space-y-6 mt-6 md:hidden">
             <a href="#" class="hover:text-gray-400">Home</a>
             <a href="#about" class="hover:text-gray-400">About</a>
             <a href="#tours" class="hover:text-gray-400">Tours</a>
@@ -241,7 +243,7 @@
     </script> -->
     <script>
         function toggleMenu(e) {
-            e.name = e.name === "menu" ? "close":"menu"
+            e.name = e.name === "menu" ? "close" : "menu"
             const navLinks = document.querySelector(".nav-links-mobile");
             navLinks.classList.toggle("hidden");
         }
